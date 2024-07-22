@@ -1,15 +1,16 @@
-import { useState } from "react";
-import documentsData from "./data/documents.yml";
-
-interface Document {
-  id: number;
-  name: string;
-  description: string;
-  link: string;
-}
+import { useEffect, useState } from "react";
+import { Document, searchDocuments } from "./data";
 
 export function App() {
-  const [docs] = useState<Document[]>(documentsData as Document[]);
+  const [docs, setDocs] = useState<Document[]>([]);
+
+  useEffect(() => {
+    async function search() {
+      const result = await searchDocuments();
+      setDocs(result);
+    }
+    search();
+  }, []);
 
   return (
     <ul>
