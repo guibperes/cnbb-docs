@@ -1,4 +1,12 @@
 baseURL: https://example.org/
 languageCode: pt-br
-title: CNBB Docs
 theme: ["hugo-book"]
+
+title: CNBB Docs
+
+disablePathToLower: true
+enableGitInfo: true
+
+params:
+  BookTheme: "auto"
+  BookComments: false
