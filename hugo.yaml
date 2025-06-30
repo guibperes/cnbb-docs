@@ -4,8 +4,6 @@ theme: ["hugo-book"]
 
 title: CNBB Docs
 
-disablePathToLower: true
-enableGitInfo: true
-
 params:
+  BookToC: false
   BookComments: false
