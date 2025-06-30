@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://guibperes.github.io/cnbb-docs/
 languageCode: pt-br
 theme: ["hugo-book"]
 
