@@ -8,5 +8,4 @@ disablePathToLower: true
 enableGitInfo: true
 
 params:
-  BookTheme: "auto"
   BookComments: false
